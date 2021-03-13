@@ -25,7 +25,6 @@
           html`
             <div>
               <h1 className='blogTitle'>${entry.getIn(['data', 'title'])}</h1>
-              <caption className='blogSubTitle'>${entry.getIn(['data', 'subtitle'])}</caption>
               ${imageMarkup}
               <div className='text'>${widgetFor('body')}</div>
             </div>
