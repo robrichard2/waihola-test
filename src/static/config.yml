@@ -4,10 +4,10 @@ backend:
 media_folder: src/assets
 public_folder: /assets
 collections:
-  - name: "pages"
-    label: "Pages"
-    label_singular: "Page" # Used in the UI, ie: "New Post"
-    folder: "content/blog"
+  - name: "projects"
+    label: "Projects"
+    label_singular: "Project" # Used in the UI, ie: "New Post"
+    folder: "content/project"
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string"}
