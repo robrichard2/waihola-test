@@ -3,7 +3,7 @@ import { Link } from 'preact-router';
 import { usePrerenderData } from '@preact/prerender-data-provider';
 import style from './style';
 
-const blogs = (props) => {
+const Projects = (props) => {
 	const [data, isLoading] = usePrerenderData(props);
 	return (
 		<div class={style.pageBlogs}>
@@ -25,7 +25,6 @@ function getBlogsListing(data, isLoading) {
 		);
 	}
 	if (data && data.data) {
-        console.log(data);
 		const { data: blogs } = data;
 		return (
 			<>
@@ -46,4 +45,4 @@ function getBlogsListing(data, isLoading) {
 	}
 }
 
-export default blogs;
+export default Projects;
